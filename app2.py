@@ -1,5 +1,55 @@
 import streamlit as st
 from datetime import datetime, time
+import streamlit as st
+
+# Configuration de la page
+st.set_page_config(page_title="Le Salon de Anna Félix", page_icon="✂️")
+
+# --- STYLE CSS PERSONNALISÉ (Pour l'effet carte noire et dorée) ---
+st.markdown("""
+    <style>
+    .main-card {
+        background-color: #1a1a1a;
+        padding: 30px;
+        border-radius: 25px;
+        border: 2px solid #d4af37;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .salon-icon {
+        font-size: 40px;
+        color: #d4af37;
+        margin-bottom: 10px;
+    }
+    .main-title {
+        color: #d4af37;
+        font-family: 'Playfair Display', serif;
+        font-weight: bold;
+        font-size: 32px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 10px;
+    }
+    .sub-title {
+        color: #ffffff;
+        font-size: 18px;
+        font-style: italic;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
+# --- AFFICHAGE DU TITRE STYLE "GLAMOUR" ---
+st.markdown("""
+    <div class="main-card">
+        <div class="salon-icon">🏢</div>
+        <div class="sub-title">Une application de réservation en ligne pour votre beauté</div>
+        <div class="main-title">LE SALON DE ANNA FÉLIX</div>
+    </div>
+    """, unsafe_allow_html=True)
+
+# --- LA SUITE DE VOTRE FORMULAIRE ---
+st.header("📋 FORMULAIRE DE RÉSERVATION")
+# ... (votre reste du code pour le formulaire ici)
 
 # --- CONFIGURATION DE LA PAGE ---
 st.set_page_config(page_title="Le Salon de Anna Félix", page_icon="✂️")
@@ -88,4 +138,4 @@ else:
 
 # --- PIED DE PAGE ---
 st.markdown("---")
-st.caption("© 2024 Le Salon de Anna Félix - 123 Rue de la Coiffure, Paris")
+st.caption("© 2024 Le Salon de Anna Félix - 123 Rue de la Coiffure, cameroun ")
